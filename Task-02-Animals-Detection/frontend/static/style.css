@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.upload-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.upload-box h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #222;
+  text-align: center;
+}
+
+#drop-area {
+  border: 2px dashed #3790ff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  background-color: #f6faff;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.cloud-icon {
+  font-size: 40px;
+  color: #3790ff;
+  margin-bottom: 10px;
+}
+
+.browse {
+  color: #3790ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.info-line {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#uploadBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+#uploadBtn:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 10;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup button {
+  margin-top: 12px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#result-container {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#result-container img,
+#result-container video {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

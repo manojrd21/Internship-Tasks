@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animals Detection with Carnivores count Upload</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="upload-container">
+    <div class="upload-box">
+      <h2>Upload file</h2>
+
+      <div id="drop-area">
+        <input type="file" id="fileElem" accept=".png,.jpg,.jpeg,.mp4" hidden />
+        <label for="fileElem" id="file-label">
+          <div class="cloud-icon">☁</div>
+          <p>Drag & Drop your files or <span class="browse">Browse</span></p>
+        </label>
+      </div>
+
+      <div class="info-line">
+        <span>Supported formats: PNG, JPG, MP4</span>
+      </div>
+
+      <button id="uploadBtn">Upload</button>
+    </div>
+
+    <div id="popup" class="popup hidden">
+      <p id="popup-text"></p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+
+    <div id="result-container"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
