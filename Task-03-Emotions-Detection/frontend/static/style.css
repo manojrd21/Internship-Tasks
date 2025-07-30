@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.upload-box {
+  border: 2px dashed #90caf9;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.upload-box p {
+  margin: 0 0 15px 0;
+  color: #666;
+}
+
+.upload-box button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.or-separator {
+  margin: 20px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.record-box button {
+  margin: 5px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#recordButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+#stopButton {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Added popup styles */
+.popup-box {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 9999;
+  text-align: center;
+  min-width: 300px;
+  font-size: 16px;
+}
+
+.popup-box button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border: none;
+  background-color: #a3bffa;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Detection Based on Voice</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Emotion Detection Based on Voice</h2>
+
+    <div class="upload-box" id="drop-area">
+      <p>Drag & Drop your files here</p>
+      <input type="file" id="fileInput" accept="audio/*" hidden>
+      <button onclick="document.getElementById('fileInput').click()">Upload Voice File</button>
+    </div>
+
+    <div class="or-separator">OR</div>
+
+    <div class="record-box">
+      <button id="recordButton">Start Recording</button>
+      <button id="stopButton" disabled>Stop Recording</button>
+    </div>
+  </div>
+
+  <!-- Popup Message Box -->
+  <div id="popupBox" class="popup-box hidden">
+    <p id="popupMessage"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+
+  <script src="static/recorder.js"></script>
+</body>
+</html>
