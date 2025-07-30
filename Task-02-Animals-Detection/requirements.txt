@@ -1,0 +1,8 @@
+flask
+flask-cors
+torch
+opencv-python
+numpy==1.24.4
+matplotlib
+ultralytics
+pillow
