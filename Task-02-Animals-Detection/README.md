@@ -59,6 +59,7 @@ Animal detection from visual data is critical for wildlife monitoring, security,
 - **Utilities**: Class mapping and drawing utilities in `utils/`
 
 ## Project Structure
+```bash
 Task-2-Animals-Detection/
 ├── backend/
 │ ├── outputs/
@@ -82,6 +83,7 @@ Task-2-Animals-Detection/
 ├── animals_detection_model.ipynb
 ├── requirements.txt
 └── README.md
+```
 
 ## Model Weights
 Download the trained model weights from the link below:
