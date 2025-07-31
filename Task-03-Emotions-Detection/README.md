@@ -57,6 +57,7 @@ In many emotion detection systems, gender differentiation is not taken into acco
 - **Utils:** Preprocessing and prediction logic in `utils.py`
 
 ## Project Structure
+```bash
 Task-3-Emotions-Detection/
 ├─ backend/
 │  ├─ __init__.py
@@ -79,7 +80,7 @@ Task-3-Emotions-Detection/
 ├─ gender_detection_model.ipynb
 ├─ requirements.txt
 └─ README.md
-
+```
 
 ## Model Weights
 Download the trained model weights from the link below:
